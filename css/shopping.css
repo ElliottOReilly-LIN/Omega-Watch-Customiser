@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #dfdcdc(153, 147, 147);
+    background: rgb(235, 232, 232);
+      }
+    h1{
+      font: 15px;
+    }
+    h2{
+      text-align: center;
+      color: white;
+      }
+   /*-----------Header----------------*/
+      header{
+        background: #fff;
+        margin-bottom: 20px;
+      }
+        .headContainer{
+      max-width: 1060px;
+      width: 96%;
+      margin: auto;
+    }
+    
+    .logo img{
+        top: 0px;
+        position: fixed;
+        left: 0px;
+        float: left;
+        }
+    
+    nav{
+    margin-top: 10px;
+    }
+   /*Start of nav bar menu-*/
+   
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        z-index: 1;
+
+           }
+           nav a {
+            border-radius: 3pt;
+            display:block;
+            padding:0 10px;	
+            color:#FFF;
+            font-size:20px;
+            line-height: 40px;
+            text-decoration:none;
+            /* I've added this drop shadow effect*/
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           }
+           /* I've added this drop shadow effect when hovering*/
+           nav a:hover { 
+            background-color: #f80000; 
+           }
+           /* Hide Dropdowns by Default */
+    nav ul ul  {
+        display: none;
+        position: absolute; 
+        top: 40px; /* the height of the main nav */
+       }
+           
+       /* Display Dropdowns on Hover */
+       nav ul li:hover > ul {
+        display:inherit;
+       }
+           
+       /* Fisrt Tier Dropdown */
+       nav ul ul li {
+        width:170px;
+        float:none;
+        display:list-item;
+        position: relative;
+    
+       }
+       /* Third Tier Dropdown */
+       nav ul ul ul li {
+        width:230px;
+        float:none;
+        display:list-item;
+        position: relative;
+    
+       }
+  
+    /* Remove Droopdown symbol */
+    li > a:after { content:''; }
+    li > a:only-child:after { content: ''; }
+    
+    nav li{
+      display: inline-block;
+      padding: 5px 20px;
+      margin-left: 10px;
+      background:rgb(68, 5, 5);
+    }
+    .products{
+        list-style: none;
+        margin-right: 300px;
+        padding: 0px;
+        height: 100%;
+     
+        margin-top: 50px;
+    }
+    .products li{
+        display:inline;
+        float:left;
+        margin:10px;
+    }
+    .item{
+        display:block;
+        text-decoration:none;
+    }
+    .item img{
+        border:1px solid #333;
+    }
+    .item p{
+        margin:0;
+        font-weight:bold;
+        text-align:center;
+        color:#c3c3c3;
+    }
+    .cart {
+        right: 400;
+        position: absolute;
+        right: 0;
+        top: 0;
+                height: 100%;
+        background: #ccc;
+        padding: 0px 10px;
+    }
+    h1{
+        text-align:center;
+        color:#555;
+    }
+    h2{
+        position:absolute;
+        font-size:16px;
+        left:10px;
+        bottom:20px;
+        color:#555;
+    }
+    .total{
+        margin:0;
+        text-align:right;
+        padding-right:20px;
+    }
+   /* When the screen is less than 461 pixels, for mobile  */
+  @media (min-width: 200px) and (max-width: 460px) {
+    body {
+      background-color: rgb(139, 146, 142);
+  }
+      .logo{
+        width: 100%;
+        height: auto;
+      }
+      header {
+        margin: auto;
+      height: 50%;
+      width: 50%;
+      display: block;
+    }
+     .cart
+     {
+        position: fixed;
+        margin-top: 400px;
+     }
+      nav ul{
+        height: 50%;
+        width: 50%;
+        display: block;
+      }
+    }
+    
+    /* 
+      /* When the screen is less than 341 pixels, for tablet  */
+      @media (min-width: 340px) and (max-width: 767px) {
+        body {
+          background-color: rgb(139, 146, 142);
+      }
+      .logo{
+        width: 100%;
+        height: auto;
+      }
+      header {
+        margin: auto;
+      height: 50%;
+      width: 50%;
+      display: block;
+    }
+      .cart
+     {
+        position: fixed;
+        margin-top: 400px;
+     }
+     nav ul{
+        height: 50%;
+        width: 50%;
+        display: block;
+      }
+    
